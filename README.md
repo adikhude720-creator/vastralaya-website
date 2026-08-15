@@ -1,14 +1,17 @@
-# Vastralaya — AJIO-inspired luxury menswear storefront
+# Vastralaya — Royal Collection Storefront
 
-This version keeps the original Vastralaya sections (Home, Collection, Bespoke, About, Store Locator and footer) but expands the shopping experience using a modern fashion-marketplace structure inspired by the reference site: utility/header navigation, category navigation, sidebar filters, sorting, large product grid, promotional tiles, cart, search and responsive mobile layout.
+A standalone, responsive Vastralaya men's-wear storefront closely inspired by the structure of modern fashion collection pages:
+- announcement bar
+- logo/header/search/account-style controls
+- mega navigation
+- collection page with sidebar filters
+- sorting, search, wishlist, quick view and cart
+- WhatsApp enquiry checkout
+- bespoke section
+- Find Us / Google Maps
+- Instagram
+- responsive mobile layout
 
-It does not copy AJIO's branding or proprietary artwork.
-
-Brand assets supplied by the user are in `assets/`.
-Product/fashion photography in the demo grid uses external Unsplash image URLs. Replace these with Vastralaya's own product photos before launch.
-
-Known links:
-- Instagram: https://www.instagram.com/vastralay.co
-- Phone: +91 73041 40777
-- Store map: user-provided Google Maps URL
-- WhatsApp group: add the invite URL in `script.js` (`groupLink`).
+This is an original Vastralaya implementation. It does not copy Uptownie's logo, text, proprietary code, or product photography.
+Replace the demo fashion-image URLs in `script.js` with Vastralaya's real product photos before launch.
+The WhatsApp button currently opens a direct chat to +91 73041 40777; a group invite link can be substituted later.

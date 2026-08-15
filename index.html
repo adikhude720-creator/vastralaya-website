@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="Vastralaya Men's Wear — royal menswear, occasionwear and accessories.">
+<meta name="description" content="Vastralaya Men's Wear — royal menswear, shirts, tailoring, occasionwear and accessories.">
 <title>Vastralaya — Men's Wear</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,120 +11,169 @@
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<div class="top-strip"><span>GRAND OPENING · 15 AUGUST 2026 · 11:30 AM</span><span>Premium Men's Wear · Bespoke · Occasion</span></div>
+<div class="announcement">
+  <div>GRAND OPENING · 15 AUGUST 2026 · 11:30 AM</div>
+  <div>ROYAL MENSWEAR · BESPOKE · EASY STORE VISIT</div>
+</div>
 
-<header class="header">
-  <div class="utility">
-    <button class="hamburger" id="menuBtn">☰</button>
-    <a class="logo" href="#home"><img src="assets/vastralaya-logo.jpg" alt="Vastralaya Men's Wear"></a>
+<header class="site-header">
+  <div class="utility-row">
+    <button class="icon-btn mobile-only" id="menuBtn" aria-label="Open menu">☰</button>
+    <a class="brand" href="#home"><img src="assets/vastralaya-logo.jpg" alt="Vastralaya Men's Wear"></a>
     <div class="utility-actions">
-      <button id="searchBtn" title="Search">⌕</button>
-      <a href="https://www.instagram.com/vastralay.co?igsh=MWU0ZGlyNzc2cDd6dA==" target="_blank" rel="noopener" title="Instagram">◎</a>
-      <button id="cartBtn" title="Bag">♧ <b id="cartCount">0</b></button>
+      <button class="icon-btn" id="searchBtn" aria-label="Search">⌕</button>
+      <a class="icon-btn" href="https://www.instagram.com/vastralay.co?igsh=MWU0ZGlyNzc2cDd6dA==" target="_blank" rel="noopener" aria-label="Instagram">◎</a>
+      <button class="icon-btn bag-btn" id="cartBtn" aria-label="Shopping bag">♧ <span id="cartCount">0</span></button>
     </div>
   </div>
+
   <nav class="main-nav" id="mainNav">
-    <a href="#home">Home</a>
-    <a href="#collection">Men</a>
-    <a href="#collection">New In</a>
-    <a href="#collection">Clothing</a>
-    <a href="#collection">Footwear</a>
-    <a href="#collection">Accessories</a>
-    <a href="#bespoke">Bespoke</a>
-    <a href="#about">About</a>
-    <a href="https://www.google.com/maps/place/Rajyog+Digital/@19.2247327,73.1375459,17.68z/data=!4m6!3m5!1s0x3be795caa2647885:0xdde8fa80e8138171!8m2!3d19.2246916!4d73.1391407!16s%2Fg%2F11c1nq87hw?entry=ttu&g_ep=EgoyMDI2MDgxMi4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener">Store Locator</a>
+    <div class="nav-item has-menu"><a href="#collection">NEW IN</a><div class="mega-menu">
+      <div><b>NEW IN</b><a href="#collection" data-filter-jump="all">All New Arrivals</a><a href="#collection" data-filter-jump="shirts">New Shirts</a><a href="#collection" data-filter-jump="blazers">New Blazers</a><a href="#collection" data-filter-jump="ethnic">New Festive</a></div>
+      <div><b>MOST LOVED</b><a href="#collection" data-search="bestseller">Bestsellers</a><a href="#collection" data-search="signature">Signature Edit</a><a href="#collection" data-search="trending">Trending Now</a></div>
+      <div><b>OCCASION</b><a href="#collection" data-filter-jump="suits">Wedding & Formal</a><a href="#collection" data-filter-jump="ethnic">Festive Wear</a><a href="#collection" data-filter-jump="blazers">Evening Wear</a></div>
+    </div></div>
+    <div class="nav-item has-menu"><a href="#collection">CLOTHING</a><div class="mega-menu">
+      <div><b>SHIRTS</b><a href="#collection" data-filter-jump="shirts">All Shirts</a><a href="#collection" data-search="formal shirt">Formal Shirts</a><a href="#collection" data-search="casual shirt">Casual Shirts</a><a href="#collection" data-search="linen">Linen Shirts</a></div>
+      <div><b>TAILORING</b><a href="#collection" data-filter-jump="blazers">Blazers & Waistcoats</a><a href="#collection" data-filter-jump="suits">Suit Sets</a><a href="#collection" data-filter-jump="trousers">Trousers</a></div>
+      <div><b>ETHNIC</b><a href="#collection" data-filter-jump="ethnic">Kurtas</a><a href="#collection" data-search="sherwani">Sherwani</a><a href="#collection" data-search="nehru">Nehru Jackets</a></div>
+    </div></div>
+    <div class="nav-item has-menu"><a href="#collection">SHIRTS</a><div class="mega-menu compact">
+      <div><b>SHOP SHIRTS</b><a href="#collection" data-filter-jump="shirts">All Shirts</a><a href="#collection" data-search="cotton">Pure Cotton</a><a href="#collection" data-search="linen">Pure Linen</a><a href="#collection" data-search="printed">Printed</a></div>
+    </div></div>
+    <div class="nav-item has-menu"><a href="#collection">TAILORING</a><div class="mega-menu compact">
+      <div><b>FORMAL</b><a href="#collection" data-filter-jump="blazers">Blazers</a><a href="#collection" data-filter-jump="suits">Suits</a><a href="#collection" data-filter-jump="trousers">Trousers</a></div>
+    </div></div>
+    <div class="nav-item"><a href="#collection" data-filter-jump="ethnic">FESTIVE</a></div>
+    <div class="nav-item"><a href="#collection" data-filter-jump="accessories">ACCESSORIES</a></div>
+    <div class="nav-item"><a href="#bespoke">BESPOKE</a></div>
+    <div class="nav-item"><a href="#store">FIND US</a></div>
   </nav>
-  <div class="mega">
-    <div><strong>CLOTHING</strong><a href="#collection" data-jump="shirts">Shirts</a><a href="#collection" data-jump="blazers">Blazers & Waistcoats</a><a href="#collection" data-jump="trousers">Trousers & Pants</a><a href="#collection" data-jump="suits">Suit Sets</a></div>
-    <div><strong>ETHNIC & FESTIVE</strong><a href="#collection" data-jump="kurtas">Kurtas</a><a href="#collection" data-jump="ethnic">Ethnic Jackets</a><a href="#collection" data-jump="sherwani">Sherwani Sets</a><a href="#collection" data-jump="nehru">Nehru Jackets</a></div>
-    <div><strong>FOOTWEAR</strong><a href="#collection" data-jump="shoes">Formal Shoes</a><a href="#collection" data-jump="sneakers">Sneakers</a><a href="#collection" data-jump="boots">Boots</a></div>
-    <div><strong>ACCESSORIES</strong><a href="#collection" data-jump="watches">Watches</a><a href="#collection" data-jump="belts">Belts</a><a href="#collection" data-jump="cufflinks">Cufflinks</a><a href="#collection" data-jump="ties">Ties & Pocket Squares</a></div>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#collection">New In</a><a href="#collection">Clothing</a><a href="#collection">Shirts</a><a href="#collection">Tailoring</a><a href="#collection">Festive</a><a href="#collection">Accessories</a><a href="#bespoke">Bespoke</a><a href="#store">Find Us</a>
   </div>
 </header>
 
 <main id="home">
-<section class="hero">
-  <div class="hero-bg"></div><div class="hero-shade"></div>
-  <div class="hero-copy">
-    <p class="eyebrow">VASTRALAYA · MEN'S WEAR</p>
-    <h1>The Royal Edit</h1>
-    <h2>Dress with presence.</h2>
-    <p>Discover refined menswear, occasion pieces and signature accessories in Vastralaya's black, gold and deep royal palette.</p>
-    <div><a class="gold-btn" href="#collection">SHOP MEN</a><a class="line-btn" href="#bespoke">BESPOKE</a></div>
-  </div>
-  <div class="hero-badge"><span>V</span><small>VASTRALAYA</small></div>
-</section>
-
-<section class="quick-cats">
-  <a href="#collection" data-jump="shirts"><span>01</span><b>SHIRTS</b><small>Formal · Casual · Premium</small></a>
-  <a href="#collection" data-jump="blazers"><span>02</span><b>BLAZERS</b><small>Tailored · Occasion</small></a>
-  <a href="#collection" data-jump="ethnic"><span>03</span><b>ETHNIC</b><small>Kurta · Festive · Royal</small></a>
-  <a href="#collection" data-jump="accessories"><span>04</span><b>ACCESSORIES</b><small>Watches · Cufflinks · Ties</small></a>
-</section>
-
-<section class="section" id="collection">
-  <div class="section-head">
-    <div><p class="eyebrow">SHOP MEN</p><h2>Curated for your wardrobe</h2><p>Inspired by modern fashion marketplaces: browse categories, filter pieces, search instantly and add favourites to your bag.</p></div>
-    <div class="sort"><label>Sort</label><select id="sortSelect"><option value="featured">Featured</option><option value="low">Price: Low to High</option><option value="high">Price: High to Low</option><option value="name">Name</option></select></div>
-  </div>
-  <div class="shop-layout">
-    <aside class="filters">
-      <div class="filter-title">SHOP BY</div>
-      <button class="side-filter active" data-filter="all">All Products</button>
-      <button class="side-filter" data-filter="shirts">Shirts</button>
-      <button class="side-filter" data-filter="blazers">Blazers & Waistcoats</button>
-      <button class="side-filter" data-filter="trousers">Trousers & Pants</button>
-      <button class="side-filter" data-filter="suits">Suit Sets</button>
-      <button class="side-filter" data-filter="ethnic">Ethnic & Festive</button>
-      <button class="side-filter" data-filter="shoes">Footwear</button>
-      <button class="side-filter" data-filter="accessories">Accessories</button>
-      <hr>
-      <div class="filter-title">COLOUR MOOD</div>
-      <div class="swatches"><button data-tone="black"></button><button data-tone="gold"></button><button data-tone="burgundy"></button><button data-tone="navy"></button><button data-tone="emerald"></button></div>
-      <a class="whatsapp-join" id="whatsappGroup" href="#">Join WhatsApp Group</a>
-    </aside>
-    <div class="catalog">
-      <div class="catalog-bar"><span id="resultCount">18 styles</span><button id="mobileFilter">FILTER +</button></div>
-      <div class="products" id="products"></div>
+  <section class="hero">
+    <div class="hero-media"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <span class="eyebrow">VASTRALAYA · MEN'S WEAR</span>
+      <h1>The Royal Shirt Edit</h1>
+      <p>Sharp shirts, refined tailoring and deep royal tones — made for the way you want to be remembered.</p>
+      <div class="hero-actions"><a class="btn gold" href="#collection">SHOP SHIRTS</a><a class="btn ghost" href="#bespoke">BESPOKE</a></div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section class="promo-grid">
-  <article class="promo promo-one"><div><p class="eyebrow">NEW ARRIVALS</p><h2>Black Label</h2><p>Deep blacks. Burnished gold. Sharp silhouettes.</p><a href="#collection" class="line-link">SHOP NOW →</a></div></article>
-  <article class="promo promo-two"><div><p class="eyebrow">FESTIVE EDIT</p><h2>Royal Occasion</h2><p>Kurtas, Nehru jackets and statement layers.</p><a href="#collection" class="line-link">EXPLORE →</a></div></article>
-</section>
+  <section class="trust-strip">
+    <div><b>100% STYLE</b><span>Curated menswear</span></div>
+    <div><b>ROYAL EDIT</b><span>Black · Gold · Deep tones</span></div>
+    <div><b>STORE VISIT</b><span>Divesh Complex</span></div>
+    <div><b>CONTACT</b><span>+91 73041 40777</span></div>
+  </section>
 
-<section class="split-section" id="bespoke">
-  <div class="split-image"><img src="assets/website-reference.jpg" alt="Vastralaya luxury website reference and fashion style"></div>
-  <div class="split-copy"><p class="eyebrow">BESPOKE COLLECTION</p><h2>Made around you.</h2><p>Personalised styling and occasion dressing for the moments that deserve more than off-the-rack.</p><a class="gold-btn" href="tel:+917304140777">ENQUIRE · 73041 40777</a></div>
-</section>
+  <section class="collection" id="collection">
+    <div class="collection-head">
+      <div>
+        <span class="eyebrow">THE VASTRALAYA SHIRT SHOP</span>
+        <h2>Shirts & more</h2>
+        <p id="collectionIntro">Crisp formal shirts, premium cottons, relaxed fits and statement pieces for work, evenings and occasions.</p>
+      </div>
+      <button class="more-btn" id="moreBtn">MORE +</button>
+    </div>
 
-<section class="story section" id="about">
-  <div class="section-head centered"><div><p class="eyebrow">THE VASTRALAYA STORY</p><h2>Style is an identity.</h2><p>Vastralaya combines classic menswear with a contemporary Indian sense of occasion.</p></div></div>
-  <div class="story-grid">
-    <div class="story-card image-card"><img src="assets/grand-opening.jpg" alt="Vastralaya grand opening"></div>
-    <div class="story-card"><span>01</span><h3>Crafted with intent</h3><p>Every edit is chosen to make dressing easier, sharper and more memorable.</p></div>
-    <div class="story-card emblem-card"><img src="assets/vastralaya-emblem.jpg" alt="Vastralaya emblem"><h3>The V Signature</h3></div>
-  </div>
-</section>
+    <div class="collection-info" id="moreInfo">
+      Premium menswear · Sizes S–XXL · Store enquiries available on WhatsApp · Visit our showroom for fit and styling assistance.
+    </div>
 
-<section class="opening section"><div><p class="eyebrow">NOW OPEN</p><h2>Begin your Vastralaya journey.</h2><p>Visit us in-store or follow the brand online.</p></div><div class="opening-actions"><a class="gold-btn" href="https://www.google.com/maps/place/Rajyog+Digital/@19.2247327,73.1375459,17.68z/data=!4m6!3m5!1s0x3be795caa2647885:0xdde8fa80e8138171!8m2!3d19.2246916!4d73.1391407!16s%2Fg%2F11c1nq87hw?entry=ttu&g_ep=EgoyMDI2MDgxMi4wIKXMDSoASAFQAw%3D%3D" target="_blank">OPEN MAP</a><a class="line-btn" href="https://www.instagram.com/vastralay.co?igsh=MWU0ZGlyNzc2cDd6dA==" target="_blank">INSTAGRAM</a></div></section>
+    <div class="shop-shell">
+      <aside class="filters" id="filters">
+        <div class="filter-heading">FILTERS</div>
+        <button class="filter-toggle" data-filter="all">All Products <span>24</span></button>
+        <button class="filter-toggle" data-filter="shirts">Shirts <span>10</span></button>
+        <button class="filter-toggle" data-filter="blazers">Blazers <span>4</span></button>
+        <button class="filter-toggle" data-filter="suits">Suit Sets <span>3</span></button>
+        <button class="filter-toggle" data-filter="trousers">Trousers <span>2</span></button>
+        <button class="filter-toggle" data-filter="ethnic">Festive <span>3</span></button>
+        <button class="filter-toggle" data-filter="accessories">Accessories <span>2</span></button>
+        <hr>
+        <details open><summary>PRICE</summary><div class="price-row"><input id="minPrice" type="number" placeholder="0"><span>—</span><input id="maxPrice" type="number" placeholder="15000"></div><button class="apply-price" id="applyPrice">APPLY</button></details>
+        <details open><summary>COLOUR</summary>
+          <label><input type="checkbox" value="black" class="color-filter"> Black</label>
+          <label><input type="checkbox" value="white" class="color-filter"> Ivory / White</label>
+          <label><input type="checkbox" value="navy" class="color-filter"> Navy</label>
+          <label><input type="checkbox" value="burgundy" class="color-filter"> Burgundy</label>
+          <label><input type="checkbox" value="gold" class="color-filter"> Gold</label>
+        </details>
+        <details open><summary>SIZE</summary>
+          <div class="size-chips"><button data-size="S">S</button><button data-size="M">M</button><button data-size="L">L</button><button data-size="XL">XL</button><button data-size="XXL">XXL</button></div>
+        </details>
+        <a class="wa-card" href="https://wa.me/917304140777" target="_blank" rel="noopener"><b>Need help?</b><span>Chat with Vastralaya on WhatsApp</span></a>
+      </aside>
 
-<section class="store section" id="store">
-  <div class="store-card"><div><p class="eyebrow">STORE LOCATOR</p><h2>Visit Vastralaya</h2><p class="store-label">ADDRESS</p><p>Divesh Complex, Foodies Corner<br>Near KDMC Office</p><p class="store-label">MOBILE</p><a class="phone" href="tel:+917304140777">+91 73041 40777</a></div>
-  <div class="map-box"><div class="map-v">V</div><p>RAJYOG DIGITAL</p><small>OPEN IN GOOGLE MAPS</small><a class="gold-btn" href="https://www.google.com/maps/place/Rajyog+Digital/@19.2247327,73.1375459,17.68z/data=!4m6!3m5!1s0x3be795caa2647885:0xdde8fa80e8138171!8m2!3d19.2246916!4d73.1391407!16s%2Fg%2F11c1nq87hw?entry=ttu&g_ep=EgoyMDI2MDgxMi4wIKXMDSoASAFQAw%3D%3D" target="_blank">GET DIRECTIONS</a></div></div>
-</section>
+      <div class="catalog">
+        <div class="catalog-toolbar">
+          <button class="mobile-filter-btn" id="mobileFilter">FILTERS +</button>
+          <span id="resultCount">24 styles</span>
+          <div class="toolbar-right"><button id="wishlistBtn">♡ Wishlist <span id="wishCount">0</span></button><label>Sort by <select id="sortSelect"><option value="featured">Featured</option><option value="relevance">Most relevant</option><option value="best">Best selling</option><option value="az">A–Z</option><option value="za">Z–A</option><option value="low">Price, low to high</option><option value="high">Price, high to low</option><option value="new">Date, new to old</option></select></label></div>
+        </div>
+        <div class="products" id="products"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="feature-banner">
+    <div class="feature-copy"><span class="eyebrow">THE BLACK LABEL</span><h2>Royal looks. Modern attitude.</h2><p>Discover Vastralaya's deep-black and burnished-gold edit for evenings, celebrations and sharp everyday dressing.</p><a class="btn gold" href="#collection">EXPLORE EDIT</a></div>
+  </section>
+
+  <section class="tiles">
+    <a href="#collection" data-filter-jump="shirts"><span>01</span><h3>Shirts</h3><small>Formal · Linen · Cotton</small></a>
+    <a href="#collection" data-filter-jump="blazers"><span>02</span><h3>Tailoring</h3><small>Blazers · Suits · Trousers</small></a>
+    <a href="#collection" data-filter-jump="ethnic"><span>03</span><h3>Festive</h3><small>Kurta · Sherwani · Nehru</small></a>
+    <a href="#collection" data-filter-jump="accessories"><span>04</span><h3>Accessories</h3><small>Watches · Cufflinks · Belts</small></a>
+  </section>
+
+  <section class="bespoke" id="bespoke">
+    <div class="bespoke-image"><img src="assets/website-reference.jpg" alt="Vastralaya bespoke menswear atmosphere"></div>
+    <div class="bespoke-copy"><span class="eyebrow">BESPOKE</span><h2>Made around you.</h2><p>For weddings, celebrations and moments that call for a sharper fit, visit Vastralaya for personal styling and bespoke guidance.</p><a class="btn gold" href="tel:+917304140777">CALL 73041 40777</a></div>
+  </section>
+
+  <section class="story">
+    <div class="story-head"><span class="eyebrow">THE VASTRALAYA STORY</span><h2>Style tumchi. Olakh amchi.</h2><p>Classic menswear with a contemporary Indian sense of occasion.</p></div>
+    <div class="story-grid">
+      <img src="assets/grand-opening.jpg" alt="Vastralaya grand opening">
+      <div><span class="story-no">01</span><h3>Crafted with intent</h3><p>Every edit is chosen to make dressing easier, sharper and more memorable.</p><a href="#store">Visit the store →</a></div>
+      <div class="emblem"><img src="assets/vastralaya-emblem.jpg" alt="Vastralaya emblem"></div>
+    </div>
+  </section>
+
+  <section class="store" id="store">
+    <div class="store-copy"><span class="eyebrow">✨ FIND US · COME SAY HELLO ✨</span><h2>Find Us <span class="spark">✦</span> Visit Vastralaya</h2><p>Divesh Complex, Foodies Corner<br>Near KDMC Office</p><a class="phone" href="tel:+917304140777">+91 73041 40777</a><div class="social-cards">
+<a class="social-card map" href="https://www.google.com/maps/place/Rajyog+Digital/@19.2247327,73.1375459,17.68z/data=!4m6!3m5!1s0x3be795caa2647885:0xdde8fa80e8138171!8m2!3d19.2246916!4d73.1391407!16s%2Fg%2F11c1nq87hw?entry=ttu" target="_blank" rel="noopener"><span class="social-icon">📍</span><span><b>OPEN MAP</b><small>Get directions</small></span><strong>→</strong></a>
+<a class="social-card insta" href="https://www.instagram.com/vastralay.co?igsh=MWU0ZGlyNzc2cDd6dA==" target="_blank" rel="noopener"><span class="social-icon">📸</span><span><b>INSTAGRAM</b><small>@vastralay.co</small></span><strong>→</strong></a>
+<a class="social-card call" href="tel:+917304140777"><span class="social-icon">📞</span><span><b>CALL US</b><small>+91 73041 40777</small></span><strong>→</strong></a>
+<a class="social-card wa" href="https://wa.me/917304140777" target="_blank" rel="noopener"><span class="social-icon">💬</span><span><b>WHATSAPP</b><small>Chat with us</small></span><strong>→</strong></a>
+</div></div>
+    <div class="map-card"><div class="map-pin">V</div><b>RAJYOG DIGITAL</b><span>Open the exact shared map location</span><a href="https://www.google.com/maps/place/Rajyog+Digital/@19.2247327,73.1375459,17.68z/data=!4m6!3m5!1s0x3be795caa2647885:0xdde8fa80e8138171!8m2!3d19.2246916!4d73.1391407!16s%2Fg%2F11c1nq87hw?entry=ttu" target="_blank" rel="noopener">GET DIRECTIONS →</a></div>
+  </section>
 </main>
 
-<footer>
-  <div class="footer-brand"><img src="assets/vastralaya-logo.jpg" alt="Vastralaya"><p>Men's Wear · Style tumchi... Olakh amchi...</p><a href="https://www.instagram.com/vastralay.co?igsh=MWU0ZGlyNzc2cDd6dA==" target="_blank">@vastralay.co</a></div>
-  <div class="footer-links"><div><strong>Shop</strong><a href="#collection">New In</a><a href="#collection">Clothing</a><a href="#collection">Footwear</a><a href="#collection">Accessories</a></div><div><strong>Vastralaya</strong><a href="#bespoke">Bespoke</a><a href="#about">About</a><a href="#store">Store Locator</a></div><div><strong>Contact</strong><a href="tel:+917304140777">7304140777</a><a href="https://www.instagram.com/vastralay.co?igsh=MWU0ZGlyNzc2cDd6dA==" target="_blank">Instagram</a><a href="#" id="footerWhatsApp">WhatsApp Group</a></div></div>
-  <div class="copyright">© 2026 Vastralaya Men's Wear. All rights reserved.</div>
+<footer class="footer">
+  <div class="footer-main">
+    <div class="footer-brand"><img src="assets/vastralaya-logo.jpg" alt="Vastralaya"><p>MEN'S WEAR · STYLE TUMCHI... OLakh AMCHI...</p><a class="footer-social" href="https://www.instagram.com/vastralay.co?igsh=MWU0ZGlyNzc2cDd6dA==" target="_blank" rel="noopener">📸 <span>Find us on Instagram</span> ✦</a></div>
+    <div><b>SHOP</b><a href="#collection">New In</a><a href="#collection" data-filter-jump="shirts">Shirts</a><a href="#collection" data-filter-jump="blazers">Tailoring</a><a href="#collection" data-filter-jump="ethnic">Festive</a><a href="#collection" data-filter-jump="accessories">Accessories</a></div>
+    <div><b>HELP</b><a href="#bespoke">Bespoke</a><a href="#store">Find Us</a><a href="tel:+917304140777">Contact</a><a href="https://wa.me/917304140777" target="_blank" rel="noopener">WhatsApp</a></div>
+    <div><b>JOIN THE COMMUNITY</b><p>Get store updates and new arrivals.</p><a class="btn gold small" href="https://wa.me/917304140777" target="_blank" rel="noopener">WHATSAPP US</a></div>
+  </div>
+  <div class="footer-bottom"><span>© 2026 Vastralaya Men's Wear</span><span>Black · Gold · Royal</span></div>
 </footer>
 
-<div class="search-panel" id="searchPanel"><button class="close-panel" id="closeSearch">×</button><div><p class="eyebrow">SEARCH VASTRALAYA</p><input id="searchInput" type="search" placeholder="Search shirts, blazers, kurtas..."><div id="searchResults"></div></div></div>
-<aside class="cart-panel" id="cartPanel"><div class="cart-head"><h2>Your Bag</h2><button class="close-cart" id="closeCart">×</button></div><div id="cartItems"></div><div class="cart-total"><span>Total</span><strong id="cartTotal">₹0</strong></div><button class="gold-btn full" id="checkoutBtn">ENQUIRE TO ORDER</button></aside>
+<div class="search-overlay" id="searchOverlay"><button id="closeSearch">×</button><div class="search-inner"><span class="eyebrow">SEARCH VASTRALAYA</span><input id="searchInput" type="search" placeholder="Search shirts, blazers, festive..."><div id="searchResults"></div></div></div>
+<aside class="cart-drawer" id="cartDrawer"><div class="drawer-head"><h2>Your Bag</h2><button id="closeCart">×</button></div><div id="cartItems"></div><div class="drawer-total"><span>Total</span><b id="cartTotal">₹0</b></div><button class="btn gold full" id="checkoutBtn">ENQUIRE TO ORDER</button><small>Orders are currently handled through WhatsApp.</small></aside>
+<div class="quick-view" id="quickView"><button id="closeQuick">×</button><div id="quickContent"></div></div>
 <div class="backdrop" id="backdrop"></div>
 <script src="script.js"></script>
-</body></html>
+</body>
+</html>
