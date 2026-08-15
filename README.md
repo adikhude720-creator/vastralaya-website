@@ -1,23 +1,14 @@
-# Vastralaya Men's Wear — Website
+# Vastralaya — AJIO-inspired luxury menswear storefront
 
-This is a static website built from the supplied Vastralaya brand assets.
+This version keeps the original Vastralaya sections (Home, Collection, Bespoke, About, Store Locator and footer) but expands the shopping experience using a modern fashion-marketplace structure inspired by the reference site: utility/header navigation, category navigation, sidebar filters, sorting, large product grid, promotional tiles, cart, search and responsive mobile layout.
 
-## Files
-- `index.html` — website structure
-- `styles.css` — black + antique-gold luxury styling
-- `script.js` — product filtering, search, demo cart and WhatsApp enquiry
-- `assets/` — supplied brand images and cleaned logo crop
+It does not copy AJIO's branding or proprietary artwork.
 
-## Run locally
-Open `index.html` in a browser.
+Brand assets supplied by the user are in `assets/`.
+Product/fashion photography in the demo grid uses external Unsplash image URLs. Replace these with Vastralaya's own product photos before launch.
 
-## Deploy free
-1. Create a GitHub repository.
-2. Upload all files/folders from this package.
-3. Import the repository into Vercel or Netlify.
-4. Deploy as a static site.
-5. No build command is required.
-
-## Before taking real orders
-Replace the sample products/prices with the actual catalogue and confirm the full store address. Add a real payment/backend system if online payment and order management are required.
-
+Known links:
+- Instagram: https://www.instagram.com/vastralay.co
+- Phone: +91 73041 40777
+- Store map: user-provided Google Maps URL
+- WhatsApp group: add the invite URL in `script.js` (`groupLink`).
